@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T335_SelfCrossing .java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T335_SelfCrossing.md" />
+              <option name="frontendQuestionId" value="leetcode.cn335" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T335_SelfCrossing.java" />
+              <option name="titleSlug" value="self-crossing" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T335_SelfCrossing.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T335_SelfCrossing.md" />
+              <option name="frontendQuestionId" value="leetcode.cn335" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T335_SelfCrossing.java" />
+              <option name="titleSlug" value="self-crossing" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T435_NonOverlappingIntervals .java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T435_NonOverlappingIntervals.md" />
+              <option name="frontendQuestionId" value="leetcode.cn435" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T435_NonOverlappingIntervals.java" />
+              <option name="titleSlug" value="non-overlapping-intervals" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T435_NonOverlappingIntervals.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T435_NonOverlappingIntervals.md" />
+              <option name="frontendQuestionId" value="leetcode.cn435" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T435_NonOverlappingIntervals.java" />
+              <option name="titleSlug" value="non-overlapping-intervals" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
