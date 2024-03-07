@@ -64,6 +64,7 @@ public class T435_NonOverlappingIntervals {
             Arrays.sort(intervals, (a, b) -> a[0]-b[0]);
             int right = intervals[0][1];
             for (int i = 1; i < intervals.length; i++) {
+                //重合需移除，并更新右边界
                 if (right > intervals[i][0]) {
                     res++;
                     right = Math.min(right, intervals[i][1]);
