@@ -90,7 +90,8 @@ public class T968_BinaryTreeCameras {
                 res++;
                 return 1;
             } else return 2;
-    }
+        }
 //leetcode submit region end(Prohibit modification and deletion)
 
+    }
 }
