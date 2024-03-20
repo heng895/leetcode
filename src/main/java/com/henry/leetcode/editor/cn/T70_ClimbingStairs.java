@@ -50,18 +50,31 @@ public class T70_ClimbingStairs {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        /**
+         * dp[i]:i阶台阶有dp[i]种排列方法(每次1、2步)
+         * @param n
+         * @return
+         */
         public int climbStairs(int n) {
-            if (n <= 2) return n;
-//            return climbStairs(n - 1) + climbStairs(n - 2);
-            int a = 1;
-            int b = 2;
-            int sum = 0;
-            for (int i = 3; i <= n; i++) {
-                sum = a + b;
-                a = b;
-                b = sum;
+//            if (n <= 2) return n;
+//            int a = 1;
+//            int b = 2;
+//            int sum = 0;
+//            for (int i = 3; i <= n; i++) {
+//                sum = a + b;
+//                a = b;
+//                b = sum;
+//            }
+//            return sum;
+            int[] dp = new int[n + 1];
+            dp[0] = 1;
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= 2; j++) {
+                    if (i - j >= 0)
+                        dp[i] += dp[i - j];
+                }
             }
-            return sum;
+            return dp[n];
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
