@@ -63,9 +63,11 @@ public class T139_WordBreak {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        /**完全背包：正序
+        /**
+         * 完全背包：正序
          * 排列：外层背包内层物品
          * dp[i]:字符串长度为i时，可以被拼接为true
+         *
          * @param s
          * @param wordDict
          * @return
@@ -73,11 +75,11 @@ public class T139_WordBreak {
         public boolean wordBreak(String s, List<String> wordDict) {
             boolean[] dp = new boolean[s.length() + 1];
             dp[0] = true;
-            for (int i = 1; i <= s.length(); i++) {
+            for (int i = 0; i <= s.length(); i++) {
                 for (String word : wordDict) {
                     int len = word.length();
-                    if (i >= len && dp[i - len] && s.substring(i - len, i).equals(word)) {
-                        dp[i] = true;
+                    if (i >= len && dp[i - len] && s.substring(i - len, i).equals(word)){
+                        dp[i]=true;
                         break;
                     }
                 }
