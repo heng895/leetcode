@@ -85,6 +85,7 @@ public class T337_HouseRobberIii {
          * dp[0]:表示当前节点不偷，但左右孩子偷不偷需要判断  dp[0] = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
          * dp[1]：表示偷，左右孩子不能偷  dp[1] = root.val + left[0] + right[0];
          * 因为运算过程需要用到遍历的结果left和right所以后序遍历
+         *
          * @param root
          * @return
          */
@@ -95,7 +96,7 @@ public class T337_HouseRobberIii {
 
         public int[] postOrder(TreeNode root) {
             int[] dp = new int[2];
-            if (root == null) return dp;
+            if(root==null) return dp;
             int[] left = postOrder(root.left);
             int[] right = postOrder(root.right);
             dp[0] = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
