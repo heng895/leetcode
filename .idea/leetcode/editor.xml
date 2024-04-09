@@ -47,6 +47,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T115_DistinctSubsequences.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T115_DistinctSubsequences.md" />
+              <option name="frontendQuestionId" value="leetcode.cn115" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T115_DistinctSubsequences.java" />
+              <option name="titleSlug" value="distinct-subsequences" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T121_BestTimeToBuyAndSellStock.java">
           <value>
             <LeetcodeEditor>
@@ -220,6 +231,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T377_CombinationSumIv.java" />
               <option name="titleSlug" value="combination-sum-iv" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T392_IsSubsequence.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T392_IsSubsequence.md" />
+              <option name="frontendQuestionId" value="leetcode.cn392" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T392_IsSubsequence.java" />
+              <option name="titleSlug" value="is-subsequence" />
             </LeetcodeEditor>
           </value>
         </entry>
