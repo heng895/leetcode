@@ -278,6 +278,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T3_LongestSubstringWithoutRepeatingCharacters.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T3_LongestSubstringWithoutRepeatingCharacters.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T3_LongestSubstringWithoutRepeatingCharacters.java" />
+              <option name="titleSlug" value="longest-substring-without-repeating-characters" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T416_PartitionEqualSubsetSum.java">
           <value>
             <LeetcodeEditor>
