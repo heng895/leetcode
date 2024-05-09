@@ -36,6 +36,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T10_RegularExpressionMatching.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T10_RegularExpressionMatching.md" />
+              <option name="frontendQuestionId" value="leetcode.cn10" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T10_RegularExpressionMatching.java" />
+              <option name="titleSlug" value="regular-expression-matching" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T1143_LongestCommonSubsequence.java">
           <value>
             <LeetcodeEditor>
@@ -124,6 +135,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T1_TwoSum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T1_TwoSum.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T1_TwoSum.java" />
+              <option name="titleSlug" value="two-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T213_HouseRobberIi.java">
           <value>
             <LeetcodeEditor>
@@ -143,6 +165,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T279_PerfectSquares.java" />
               <option name="titleSlug" value="perfect-squares" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T2_AddTwoNumbers.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T2_AddTwoNumbers.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T2_AddTwoNumbers.java" />
+              <option name="titleSlug" value="add-two-numbers" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -256,6 +289,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T42_TrappingRainWater.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T42_TrappingRainWater.md" />
+              <option name="frontendQuestionId" value="leetcode.cn42" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T42_TrappingRainWater.java" />
+              <option name="titleSlug" value="trapping-rain-water" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T435_NonOverlappingIntervals .java">
           <value>
             <LeetcodeEditor>
@@ -297,6 +341,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T494_TargetSum.java" />
               <option name="titleSlug" value="target-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T496_NextGreaterElementI.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T496_NextGreaterElementI.md" />
+              <option name="frontendQuestionId" value="leetcode.cn496" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T496_NextGreaterElementI.java" />
+              <option name="titleSlug" value="next-greater-element-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T503_NextGreaterElementIi.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T503_NextGreaterElementIi.md" />
+              <option name="frontendQuestionId" value="leetcode.cn503" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T503_NextGreaterElementIi.java" />
+              <option name="titleSlug" value="next-greater-element-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -465,6 +531,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T739_DailyTemperatures.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T739_DailyTemperatures.md" />
+              <option name="frontendQuestionId" value="leetcode.cn739" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T739_DailyTemperatures.java" />
+              <option name="titleSlug" value="daily-temperatures" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T746_MinCostClimbingStairs.java">
           <value>
             <LeetcodeEditor>
@@ -506,6 +583,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T96_UniqueBinarySearchTrees.java" />
               <option name="titleSlug" value="unique-binary-search-trees" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/TLCR 055_KTOapQ.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/TLCR 055_KTOapQ.md" />
+              <option name="frontendQuestionId" value="leetcode.cnLCR 055" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/TLCR 055_KTOapQ.java" />
+              <option name="titleSlug" value="kTOapQ" />
             </LeetcodeEditor>
           </value>
         </entry>
