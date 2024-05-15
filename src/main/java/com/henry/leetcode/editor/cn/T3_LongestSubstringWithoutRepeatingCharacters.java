@@ -59,11 +59,12 @@ public class T3_LongestSubstringWithoutRepeatingCharacters {
     class Solution {
         public int lengthOfLongestSubstring(String s) {
             Map<Character, Integer> map = new HashMap<>();
+            char[] str = s.toCharArray();
             int res = 0;
-            for (int i = 0, j = -1; i < s.length(); i++) {
-                if (map.containsKey(s.charAt(i))) j = Math.max(j, map.get(s.charAt(i)));
-                map.put(s.charAt(i), i);
+            for (int i = 0, j = -1; i < str.length; i++) {
+                if (map.containsKey(str[i])) j = Math.max(j, map.get(str[i]));
                 res = Math.max(res, i - j);
+                map.put(str[i], i);
             }
             return res;
         }

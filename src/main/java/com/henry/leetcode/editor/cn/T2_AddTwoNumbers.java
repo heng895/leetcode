@@ -42,47 +42,48 @@
 
 
 package com.henry.leetcode.editor.cn;
- /**
- * @author  Henry
- * @date 2024-05-09 14:46:45
+
+/**
+ * @author Henry
+ * @date 2024-05-10 13:32:58
  */
 //Java：两数相加
-public class T2_AddTwoNumbers{
+public class T2_AddTwoNumbers {
     public static void main(String[] args) {
         Solution solution = new T2_AddTwoNumbers().new Solution();
         // TO TEST
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 
-
-public class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
-
-class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode p = l1, q = l2;
-        ListNode dummyHead = new ListNode(-1);
-        ListNode curl = dummyHead;
-        int carry = 0;
-        while (p != null || q != null) {
-            int x = p != null ? p.val : 0;
-            int y = q != null ? q.val : 0;
-            int sum = x + y + carry;
-            carry = sum / 10;
-            curl.next = new ListNode(sum % 10);
-            curl = curl.next;
-            if (p != null) p = p.next;
-            if (q != null) q = q.next;
+    /**
+     * Definition for singly-linked list.
+     * public class ListNode {
+     * int val;
+     * ListNode next;
+     * ListNode() {}
+     * ListNode(int val) { this.val = val; }
+     * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+     * }
+     */
+    class Solution {
+        public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+            ListNode p = l1, q = l2;
+            ListNode dummyHead = new ListNode(-1);
+            ListNode cur = dummyHead;
+            int carry = 0;
+            while (p != null || q != null) {
+                int l = p != null ? p.val : 0;
+                int r = q != null ? q.val : 0;
+                int sum = carry + l + r;
+                carry = sum / 10;
+                cur.next = new ListNode(sum % 10);
+                cur = cur.next;
+                if (p != null) p = p.next;
+                if (q != null) q = q.next;
+            }
+            if (carry > 0) cur.next = new ListNode(carry);
+            return dummyHead.next;
         }
-        if (carry > 0) curl.next = new ListNode(carry);
-        return dummyHead.next;
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
-
 }
