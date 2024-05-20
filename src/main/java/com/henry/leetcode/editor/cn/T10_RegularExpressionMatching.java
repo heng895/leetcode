@@ -47,22 +47,57 @@
 
 
 package com.henry.leetcode.editor.cn;
- /**
- * @author  Henry
+
+
+/**
+ * @author Henry
  * @date 2024-05-08 20:15:54
  */
 //Java：正则表达式匹配
-public class T10_RegularExpressionMatching{
+public class T10_RegularExpressionMatching {
     public static void main(String[] args) {
         Solution solution = new T10_RegularExpressionMatching().new Solution();
+        String s = "aab";
+        String p = "c*a*b";
+        System.out.println(solution.isMatch(s, p));
         // TO TEST
     }
+
     //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public boolean isMatch(String s, String p) {
+    class Solution {
+        /**
+         * a*作为一个整体，可以为0个a，1个a，多个a
+         * dp[i][j]:表示s[0..i]与p[0..j]是否匹配
+         * @param s
+         * @param p
+         * @return
+         */
+        public boolean isMatch(String s, String p) {
+            int m = s.length();
+            int n = p.length();
+            boolean[][] dp = new boolean[m + 1][n + 1];
+            dp[0][0] = true;
+            for (int i = 2; i <= n; i += 2) {
+                if (p.charAt(i - 1) == '*') dp[0][i] = dp[0][i - 2];
+            }
+            for (int i = 1; i <= m; i++) {
+                for (int j = 1; j <= n; j++) {
+                    char chs = s.charAt(i - 1);
+                    char chp = p.charAt(j - 1);
+                    if (chp == '.' || chp == chs) dp[i][j] = dp[i - 1][j - 1];
+                    if (chp == '*') {
+                        char pre = p.charAt(j - 2);
+                        //a*匹配空
+                        dp[i][j] = dp[i][j - 2];
+                        //a*匹配一个或多个字符
+                        if (pre == '.' || pre == chs) dp[i][j] = dp[i][j] || dp[i - 1][j];
+                    }
+                }
+            }
+            return dp[m][n];
+        }
 
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
