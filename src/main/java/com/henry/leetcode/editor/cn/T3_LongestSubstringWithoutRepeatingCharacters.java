@@ -63,8 +63,8 @@ public class T3_LongestSubstringWithoutRepeatingCharacters {
             int res = 0;
             for (int i = 0, j = -1; i < str.length; i++) {
                 if (map.containsKey(str[i])) j = Math.max(j, map.get(str[i]));
-                res = Math.max(res, i - j);
                 map.put(str[i], i);
+                res = Math.max(res, i - j);
             }
             return res;
         }

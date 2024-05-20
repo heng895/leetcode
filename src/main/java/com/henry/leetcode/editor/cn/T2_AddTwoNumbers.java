@@ -89,16 +89,16 @@ public class T2_AddTwoNumbers {
             ListNode cur = dummyHead;
             int carry = 0;
             while (p != null || q != null) {
-                int l = p != null ? p.val : 0;
-                int r = q != null ? q.val : 0;
-                int sum = carry + l + r;
+                int a = p != null ? p.val : 0;
+                int b = q != null ? q.val : 0;
+                int sum = carry + a + b;
                 carry = sum / 10;
                 cur.next = new ListNode(sum % 10);
                 cur = cur.next;
                 if (p != null) p = p.next;
                 if (q != null) q = q.next;
             }
-            if (carry > 0) cur.next = new ListNode(carry);
+            if(carry>0) cur.next = new ListNode(carry);
             return dummyHead.next;
         }
     }
