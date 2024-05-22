@@ -68,6 +68,7 @@ public class T10_RegularExpressionMatching {
         /**
          * a*作为一个整体，可以为0个a，1个a，多个a
          * dp[i][j]:表示s[0..i]与p[0..j]是否匹配
+         *
          * @param s
          * @param p
          * @return
@@ -77,19 +78,17 @@ public class T10_RegularExpressionMatching {
             int n = p.length();
             boolean[][] dp = new boolean[m + 1][n + 1];
             dp[0][0] = true;
-            for (int i = 2; i <= n; i += 2) {
-                if (p.charAt(i - 1) == '*') dp[0][i] = dp[0][i - 2];
+            for (int j = 2; j <= n; j += 2) {
+                if (p.charAt(j - 1) == '*') dp[0][j] = dp[0][j - 2];
             }
             for (int i = 1; i <= m; i++) {
                 for (int j = 1; j <= n; j++) {
                     char chs = s.charAt(i - 1);
                     char chp = p.charAt(j - 1);
                     if (chp == '.' || chp == chs) dp[i][j] = dp[i - 1][j - 1];
-                    if (chp == '*') {
-                        char pre = p.charAt(j - 2);
-                        //a*匹配空
+                    else if (chp == '*') {
                         dp[i][j] = dp[i][j - 2];
-                        //a*匹配一个或多个字符
+                        int pre = p.charAt(j - 2);
                         if (pre == '.' || pre == chs) dp[i][j] = dp[i][j] || dp[i - 1][j];
                     }
                 }

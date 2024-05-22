@@ -50,14 +50,14 @@ public class T5_LongestPalindromicSubstring {
     class Solution {
         public String longestPalindrome(String s) {
             int n = s.length();
-            String res = "";
-            boolean[][] dp = new boolean[n][n];
             char[] str = s.toCharArray();
+            boolean[][] dp = new boolean[n][n];
+            String res = "";
             for (int len = 1; len <= n; len++) {
                 for (int i = 0, j = i + len - 1; j < n; i++, j++) {
                     if (len == 1) dp[i][j] = true;
-                    else if (len == 2) dp[i][j] = str[i] == str[j];
-                    else dp[i][j] = dp[i + 1][j - 1] && str[i] == str[j];
+                    else if (len == 2 && str[i] == str[j]) dp[i][j] = true;
+                    else dp[i][j] = str[i] == str[j] && dp[i + 1][j - 1];
                     if (dp[i][j] && len > res.length()) res = s.substring(i, i + len);
                 }
             }
