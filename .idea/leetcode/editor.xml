@@ -146,6 +146,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T17_LetterCombinationsOfAPhoneNumber.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T17_LetterCombinationsOfAPhoneNumber.md" />
+              <option name="frontendQuestionId" value="leetcode.cn17" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T17_LetterCombinationsOfAPhoneNumber.java" />
+              <option name="titleSlug" value="letter-combinations-of-a-phone-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T188_BestTimeToBuyAndSellStockIv.java">
           <value>
             <LeetcodeEditor>
@@ -209,6 +220,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T2433_FindTheOriginalArrayOfPrefixXor.java" />
               <option name="titleSlug" value="find-the-original-array-of-prefix-xor" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T2447_NumberOfSubarraysWithGcdEqualToK.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T2447_NumberOfSubarraysWithGcdEqualToK.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2447" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T2447_NumberOfSubarraysWithGcdEqualToK.java" />
+              <option name="titleSlug" value="number-of-subarrays-with-gcd-equal-to-k" />
             </LeetcodeEditor>
           </value>
         </entry>
