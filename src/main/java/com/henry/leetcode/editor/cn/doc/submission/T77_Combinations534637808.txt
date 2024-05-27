@@ -1,0 +1,31 @@
+    class Solution {
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> path = new ArrayList<>();
+
+        public List<List<Integer>> combine(int n, int k) {
+
+            backtracking(n, k, 1);
+            return res;
+        }
+
+        public void backtracking(int n, int k, int start) {
+            if (k ==path.size()) {
+                res.add(new ArrayList<>(path));
+                return;
+            }
+            for (int i = start; i <= n; i++) {
+                path.add(i);
+                backtracking(n, k, start + 1);
+                path.remove(path.size() - 1);
+            }
+        }
+    }
+
+//total_testcases:27
+//total_correct:5
+//input_formatted:4
+2
+//expected_output:[[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]
+//code_output:[[1,2],[1,3],[1,4],[2,2],[2,3],[2,4],[3,2],[3,3],[3,4],[4,2],[4,3],[4,4]]
+//last_testcase:4
+2
