@@ -57,25 +57,24 @@ public class T17_LetterCombinationsOfAPhoneNumber {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        List<String> res = new ArrayList<>();
-        StringBuilder path = new StringBuilder();
-
         public List<String> letterCombinations(String digits) {
-            if (digits.length() == 0) return res;
+            List<String> res = new ArrayList<>();
+            StringBuilder path = new StringBuilder();
+            if (digits.isEmpty()) return res;
             String[] numString = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-            backtracking(digits, numString, 0);
+            backtracking(res, path, digits, numString);
             return res;
         }
 
-        public void backtracking(String digits, String[] numString, int start) {
-            if (digits.length() == start) {
+        public void backtracking(List<String> res, StringBuilder path, String digits, String[] numString) {
+            if (digits.length() == path.length()) {
                 res.add(path.toString());
                 return;
             }
-            String str = numString[digits.charAt(start) - '0'];
+            String str = numString[digits.charAt(path.length()) - '0'];
             for (int i = 0; i < str.length(); i++) {
                 path.append(str.charAt(i));
-                backtracking(digits, numString, start + 1);
+                backtracking(res, path, digits, numString);
                 path.deleteCharAt(path.length() - 1);
             }
         }
