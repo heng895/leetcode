@@ -63,15 +63,14 @@ public class T39_CombinationSum {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        List<List<Integer>> res = new ArrayList<>();
-        List<Integer> path = new ArrayList<>();
-
         public List<List<Integer>> combinationSum(int[] candidates, int target) {
-            backtracking(candidates, target, 0, 0);
+            List<List<Integer>> res = new ArrayList<>();
+            List<Integer> path = new ArrayList<>();
+            backtracking(res, path, candidates, target, 0, 0);
             return res;
         }
 
-        public void backtracking(int[] candidates, int target, int sum, int start) {
+        public void backtracking(List<List<Integer>> res, List<Integer> path, int[] candidates, int target, int sum, int start) {
             if (sum > target) return;
             if (sum == target) {
                 res.add(new ArrayList<>(path));
@@ -80,7 +79,7 @@ public class T39_CombinationSum {
             for (int i = start; i < candidates.length; i++) {
                 path.add(candidates[i]);
                 sum += candidates[i];
-                backtracking(candidates, target, sum, i);
+                backtracking(res, path, candidates, target, sum, i);
                 sum -= candidates[i];
                 path.remove(path.size() - 1);
             }
