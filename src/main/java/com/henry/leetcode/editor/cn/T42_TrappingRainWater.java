@@ -52,31 +52,28 @@ public class T42_TrappingRainWater {
     class Solution {
         /**
          * 双指针
+         *
          * @param height
          * @return
          */
-//        public int trap(int[] height) {
-//            int n = height.length;
-//            int[] leftMax = new int[n];
-//            int[] rightMax = new int[n];
-//            int sum = 0;
-//
-//            leftMax[0] = height[0];
-//            for (int i = 1; i < n; i++) {
-//                leftMax[i] = Math.max(height[i], leftMax[i - 1]);
-//            }
-//            rightMax[n - 1] = height[n - 1];
-//            for (int i = n - 2; i >= 0; i--) {
-//                rightMax[i] = Math.max(height[i], rightMax[i + 1]);
-//            }
-//
-//            for (int i = 1; i < n - 1; i++) {
-//                int count = Math.min(leftMax[i], rightMax[i]);
-//                if (count < 0) continue;
-//                sum += count - height[i];
-//            }
-//            return sum;
-//        }
+        public int trap(int[] height) {
+            int sum = 0;
+            int n = height.length;
+            int[] leftMax = new int[n];
+            int[] rightMax = new int[n];
+            leftMax[0] = height[0];
+            for (int i = 1; i < n; i++) {
+                leftMax[i] = Math.max(leftMax[i - 1], height[i]);
+            }
+            rightMax[n - 1] = height[n - 1];
+            for (int i = n - 2; i >= 0; i--) {
+                rightMax[i] = Math.max(rightMax[i + 1], height[i]);
+            }
+            for (int i = 1; i < n - 1; i++) {
+                sum += Math.min(leftMax[i], rightMax[i]) - height[i];
+            }
+            return sum;
+        }
 
         /**
          * 单调栈
@@ -84,23 +81,22 @@ public class T42_TrappingRainWater {
          * @param height
          * @return
          */
-        public int trap(int[] height) {
-            Deque<Integer> stack = new ArrayDeque<>();
-            stack.push(0);
-            int sum = 0;
-            for (int i = 1; i < height.length; i++) {
-                while (!stack.isEmpty() && height[i] > height[stack.peek()]) {
-                    int mid = stack.pop();
-                    if (!stack.isEmpty()) {
-                        int h = Math.min(height[stack.peek()], height[i]) - height[mid];
-                        int w = i - stack.peek() - 1;
-                        sum += h * w;
-                    }
-                }
-                stack.push(i);
-            }
-            return sum;
-        }
+//        public int trap(int[] height) {
+//            int sum = 0;
+//            Deque<Integer> stack = new ArrayDeque<>();
+//            for (int i = 0; i < height.length; i++) {
+//                while (!stack.isEmpty() && height[i] > height[stack.peek()]) {
+//                    int top = stack.pop();
+//                    if (stack.isEmpty()) break;
+//                    int left = stack.peek();
+//                    int width = i - left - 1;
+//                    int h = Math.min(height[i], height[left]) - height[top];
+//                    sum += h * width;
+//                }
+//                stack.push(i);
+//            }
+//            return sum;
+//        }
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
