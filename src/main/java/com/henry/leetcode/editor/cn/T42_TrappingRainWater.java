@@ -51,7 +51,7 @@ public class T42_TrappingRainWater {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         /**
-         * 双指针
+         * 动态规划，首先遍历两次求得每个节点左右侧最高，减去当前高度即为积水
          *
          * @param height
          * @return
@@ -76,7 +76,7 @@ public class T42_TrappingRainWater {
         }
 
         /**
-         * 单调栈
+         * 单调栈，自底向上递减，碰到大于栈顶的，需要计算积水
          *
          * @param height
          * @return
