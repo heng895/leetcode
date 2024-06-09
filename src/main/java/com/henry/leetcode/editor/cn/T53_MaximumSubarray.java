@@ -64,14 +64,14 @@ public class T53_MaximumSubarray {
          * @return
          */
         public int maxSubArray(int[] nums) {
-            int temp = nums[0];
-            int res = temp;
+            int sum = nums[0];
+            int max = sum;
             for (int i = 1; i < nums.length; i++) {
-                if (temp > 0) temp += nums[i];
-                else temp = Math.max(nums[i], temp);
-                res = Math.max(temp, res);
+                if (sum > 0) sum += nums[i];
+                else sum = Math.max(sum, nums[i]);
+                max = Math.max(max, sum);
             }
-            return res;
+            return max;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

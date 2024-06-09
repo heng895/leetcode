@@ -48,6 +48,8 @@ import java.util.*;
 public class T49_GroupAnagrams {
     public static void main(String[] args) {
         Solution solution = new T49_GroupAnagrams().new Solution();
+        String[] strings = {"eat", "tea", "tan", "ate", "nat", "bat"};
+        solution.groupAnagrams(strings);
         // TO TEST
     }
 
@@ -55,6 +57,7 @@ public class T49_GroupAnagrams {
     class Solution {
         /**
          * 每个str排序去map查找，找到则加入，否则新建
+         *
          * @param strs
          * @return
          */
@@ -63,9 +66,9 @@ public class T49_GroupAnagrams {
             for (String str : strs) {
                 char[] s = str.toCharArray();
                 Arrays.sort(s);
-                String sortedStr = new String(s);
-                if (!map.containsKey(sortedStr)) map.put(sortedStr,new ArrayList<>());
-                map.get(sortedStr).add(str);
+                String sortedstr = new String(s);
+                if (!map.containsKey(sortedstr)) map.put(sortedstr, new ArrayList<>());
+                map.get(sortedstr).add(str);
             }
             return new ArrayList<>(map.values());
         }
