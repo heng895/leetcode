@@ -696,6 +696,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T55_JumpGame.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/doc/content/T55_JumpGame.md" />
+              <option name="frontendQuestionId" value="leetcode.cn55" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T55_JumpGame.java" />
+              <option name="titleSlug" value="jump-game" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/henry/leetcode/editor/cn/T56_MergeIntervals.java">
           <value>
             <LeetcodeEditor>

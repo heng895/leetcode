@@ -69,7 +69,7 @@ public class T53_MaximumSubarray {
             for (int i = 1; i < nums.length; i++) {
                 if (sum > 0) sum += nums[i];
                 else sum = Math.max(sum, nums[i]);
-                max = Math.max(max, sum);
+                max = Math.max(sum, max);
             }
             return max;
         }
