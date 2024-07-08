@@ -49,10 +49,18 @@ public class T55_JumpGame {
     class Solution {
         /**
          * 设置一个变量len，记录当前能到达的最远位置len=max(len, i+nums[i])
+         *
          * @param nums
          * @return
          */
         public boolean canJump(int[] nums) {
+            int len = nums[0];
+            for (int i = 1; i < nums.length; i++) {
+                if (len < i) return false;
+                len = Math.max(len, i + nums[i]);
+                if (len > nums.length - 1) break;
+            }
+            return true;
 //            int n = nums.length;
 //            boolean[] dp = new boolean[n];
 //            for (int i = n - 1; i >= 0; i--) {
@@ -68,13 +76,6 @@ public class T55_JumpGame {
 //                }
 //            }
 //            return dp[0];
-            int len = nums[0];
-            for (int i = 1; i < nums.length; i++) {
-                if (len < i) return false;
-                len = Math.max(len, i + nums[i]);
-                if(len >= nums.length - 1) return true;
-            }
-            return true;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
