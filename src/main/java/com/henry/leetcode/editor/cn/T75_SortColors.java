@@ -65,7 +65,7 @@ public class T75_SortColors {
         /**
          * low<=mid<=high
          * low指向0的右边界，mid指向1的右边界，high指向2的左边界
-         * 当nums[mid]为0时与nums[low]交换，low++,mid++
+         * 当nums[mid]为0时，与nums[low]交换，low++,mid++
          * 当nums[mid]为1时，mid++
          * 当nums[mid]为2时，与nums[high]交换，high--
          * 整个过程保证low的左侧只有0，mid左侧只有0和1，high的右侧只有2
