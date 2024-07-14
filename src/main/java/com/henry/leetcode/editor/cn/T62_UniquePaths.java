@@ -72,7 +72,7 @@ public class T62_UniquePaths {
                     else dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
                 }
             }
-            return dp[m-1][n-1];
+            return dp[m - 1][n - 1];
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

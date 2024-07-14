@@ -56,15 +56,13 @@ public class T56_MergeIntervals {
         public int[][] merge(int[][] intervals) {
             if (intervals.length == 1) return intervals;
             Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+            int[] pair = intervals[0];
             List<int[]> res = new ArrayList<>();
-            int[] pair=intervals[0];
             for (int i = 1; i < intervals.length; i++) {
                 if (intervals[i][0] > pair[1]) {
                     res.add(pair);
-                    pair=intervals[i];  //更新pair指向
-                } else {
-                    pair[1] = Math.max(pair[1], intervals[i][1]);
-                }
+                    pair = intervals[i];
+                } else pair[1] = Math.max(pair[1], intervals[i][1]);
             }
             res.add(pair);
             return res.toArray(new int[res.size()][]);
