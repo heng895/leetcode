@@ -69,20 +69,21 @@ public class T75_SortColors {
          * 当nums[mid]为1时，mid++
          * 当nums[mid]为2时，与nums[high]交换，high--
          * 整个过程保证low的左侧只有0，mid左侧只有0和1，high的右侧只有2
+         *
          * @param nums
          */
         public void sortColors(int[] nums) {
             int low = 0, mid = 0, high = nums.length - 1;
             while (mid <= high) {
-                switch (nums[mid]){
+                switch (nums[mid]) {
                     case 0:
-                        swap(nums,low++,mid++);
+                        swap(nums, low++, mid++);
                         break;
                     case 1:
                         mid++;
                         break;
                     case 2:
-                        swap(nums,mid,high--);
+                        swap(nums, mid, high--);
                         break;
                 }
             }
